@@ -1,0 +1,10 @@
+build2
+node_modules
+dist
+npm-debug.log
+.DS_Store
+.vscode
+.samples.config.js*
+testenv
+okta-oidc-tck
+prodenv
