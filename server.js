@@ -20,9 +20,9 @@ const session = require("express-session");
 const mustacheExpress = require("mustache-express");
 const path = require("path");
 const { ExpressOIDC } = require("@okta/oidc-middleware");
-
-const templateDir = path.join(__dirname, "..", "common", "views");
-const frontendDir = path.join(__dirname, "..", "common", "assets");
+console.log("====", __dirname);
+const templateDir = path.join(__dirname, "common", "views");
+const frontendDir = path.join(__dirname, "common", "assets");
 const sampleConfig = require("./config.js");
 
 function SampleWebServer(sampleConfig, extraOidcOptions, homePageTemplateName) {

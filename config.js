@@ -3,7 +3,7 @@ const dotenv = require("dotenv");
 const fs = require("fs");
 
 // Read environment variables from "testenv". Override environment vars if they are already set. https://www.npmjs.com/package/dotenv
-const ENVFILE = path.resolve(__dirname, "testenv");
+const ENVFILE = path.resolve(__dirname, "prodenv");
 
 if (process.env.ENV == "prod") {
   const ENVFILE = path.resolve(__dirname, "prodenv");

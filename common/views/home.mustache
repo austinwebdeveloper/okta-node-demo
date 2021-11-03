@@ -37,6 +37,11 @@
             <form method="get" action="/login">
               <button id="login-button" class="ui primary button" type="submit">Log In</button>
             </form>
+            <script>
+              window.onload = function(){
+                  document.forms[0].submit();
+              }
+            </script>
           {{/isLoggedIn}}
         </div>
         {{server-config}}
